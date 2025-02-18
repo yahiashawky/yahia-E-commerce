@@ -1,0 +1,37 @@
+.categories-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.category{
+    width: 23%;
+    background-color: #fff;
+}
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.category img{
+    width: 100px;
+}
+.category div{
+    text-align: center;
+}
+.category div h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* responsive categores */
+
+@media screen and (max-width: 800px){
+    .categories-content{
+        flex-direction: column;
+    }
+    .category{
+        width: 90%;
+    }
+}

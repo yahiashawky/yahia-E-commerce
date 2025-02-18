@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html ,body{
+  font-family: "Tajawal", sans-serif;
+  overflow-x: hidden;
+  background-color: #eee;
+}
+:root{
+  --main-color : #cece2b;
+}
+.container{
+  width: 90%;
+  margin: 100px auto;
+}
+.title{
+  text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: var(--main-color);
+}
+.app-dark{
+  background-color: black;
+  color: #fff;
+}
+.app-dark .service ,.app-dark .category , .app-dark .fproduct{
+  background-color: #222;
+}
+.app-dark .child-partner{
+  background-color: #000;
+}
+.app-dark .contact-left{
+  background-color: #222;
+}
+.app-dark .contact-left input ,.app-dark textarea {
+  background-color: #111;
+  border: 1px solid #000 !important;
+  color: #fff;
+}
+.app-dark .contact-right-up{
+  background-color: #222;
+}
+.app-dark .contact-right-down , .app-dark .contact-right-down div{
+  background-color: #222;
+}
+.app-dark .product , .app-dark .product-details-img , .app-dark .product-info{
+  background-color: #222;
+}
+.app-dark .products-toggle{
+  background-color: #222;
+}
+.app-dark .products-toggle a{
+  color: #fff !important;
+}
+.app-dark .watched-product{
+  background-color: #222;
+}
+.app-dark .cart-product{
+  background-color: #222;
+}
+.app-dark .total{
+  background-color: #222;
+}
+
+

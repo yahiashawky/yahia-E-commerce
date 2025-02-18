@@ -1,0 +1,110 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    height: 50vh;
+    margin-top: 200px;
+}
+.header-left{
+    width: 60%;
+}
+.header-right{
+    width: 35%;
+}
+.header-left-man{
+    background-image: linear-gradient(rgba(20,20,20,0.4),rgba(20,20,20,0.4)),url(../../img/carousel-1.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.header-left-Woman{
+    background-image: linear-gradient(rgba(20,20,20,0.5),rgba(20,20,20,0.5)),url(../../img/carousel-2.jpg);
+    background-size: cover;
+    height: 400px;
+
+}
+.header-left-kids{
+    background-image: linear-gradient(rgba(20,20,20,0.5),rgba(20,20,20,0.5)),url(../../img/carousel-3.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.h div{
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    color: #fff;
+}
+.h div >*{
+    margin-bottom: 20px;
+}
+.h div h2{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.h div p{
+    line-height: 1.5;
+    color: #ddd;
+    font-size: 18px;
+}
+.header button{
+    padding: 10px;
+    width: 150px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header button:hover{
+    background-color: var(--main-color);
+    border: none;
+}
+.header-right-up{
+    background-image: linear-gradient(rgba(20,20,20,0.5),rgba(20,20,20,0.5)), url(../../img/offer-1.jpg);
+    background-size: cover;
+    height: 199px;
+    margin-bottom: 2px;
+}
+.header-right-down{
+    background-image: linear-gradient(rgba(20,20,20,0.5),rgba(20,20,20,0.5)), url(../../img/offer-2.jpg);
+    background-size: cover;
+    height: 199px;
+}
+.s div{
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin: 0px auto;
+    padding: 40px 0;
+}
+.s div >*{
+    margin-bottom: 10px;
+}
+
+/* responsive header  */
+
+@media screen and (max-width: 800px){
+    .header{
+        flex-direction: column;
+        height: max-content;
+        margin-top: 50px;
+    }
+    .header-left{
+        width: 90%;
+    }
+    .header-right{
+        width: 90%;
+    }
+    .header-left-man{
+        height: 450px;
+    }
+    .header-left-Woman{
+        height: 450px;
+    
+    }
+    .header-left-kids{
+        height: 450px;
+    }
+}

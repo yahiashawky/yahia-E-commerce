@@ -1,0 +1,153 @@
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 555;
+}
+.main-nav{
+    background-color: #3d464d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.nav-left h2 span{
+    color: var(--main-color);
+    font-size: 25px;
+}
+.nav-middle ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    
+}
+.nav-middle ul a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-middle ul a:hover{
+    color: var(--main-color);
+    font-size: 19px;
+}
+.nav-right{
+    display: flex;
+    gap: 30px;
+}
+.nav-icon{
+    font-size: 20px;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-icon:hover{
+    color: #ecf808;
+}
+.products-link{
+    position: relative;
+}
+.products-toggle{
+    position: absolute;
+    top: 44.5px;
+    left: -60px;
+    padding: 25px;
+    background-color: #ccc;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.products-toggle a{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000 !important;
+    font-size: 18px;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.products-toggle a:hover{
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+nav .menu{
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+.moon , .sun{
+    font-size: 20px;
+    cursor: pointer;
+}
+.sun{
+    animation: sun 3s infinite;
+}
+@keyframes sun{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* responsive navbar */
+
+@media screen and (max-width : 800px){
+    nav{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 555;
+    }
+    .main-nav{
+        background-color: #3d464d;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    .nav-left h2{
+        font-size: 20px;
+    }
+    .nav-left h2 span{
+        font-size: 20px;
+    }
+    nav{
+        position: relative;
+    }
+    .nav-middle ul{
+        position:absolute;
+        flex-direction: column;
+        background-color: var(--main-color);
+        top: 64px;
+        right: -100%;
+        width: 250px;
+        padding: 15px;
+        transition: 1.5s;
+    }
+    .nav-middle ul.open{
+        right: 0%;
+    }
+    .nav-middle ul a:hover{
+        color: #eee;
+        font-size: 19px;
+    }
+    nav .menu{
+        display: block;
+    }
+    .app-dark .nav-middle ul{
+        background-color: #222;
+    }
+}

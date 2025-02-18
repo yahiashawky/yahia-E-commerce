@@ -1,0 +1,65 @@
+.empty-watchlist{
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.watched-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.watched-product{
+    width: 22%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.watched-product >*{
+    margin-bottom: 20px;
+}
+.watched-product img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.watched-product .watch-title{
+    letter-spacing: 1.3px;
+    font-size: 25px;
+}
+.watched-product button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+.watched-product .add-to-cart{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: green;
+    color: #fff;
+    width: 185px;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+}
+.watched-product .add-to-cart >*{
+   margin-right: 30px;
+}
+
+@media screen and (max-width: 800px){
+    .watched-products{
+        flex-direction: column;
+    }
+    .watched-product{
+        width: 95%;
+    }
+}

@@ -1,0 +1,141 @@
+.title p{
+    color: #ccc;
+    width: 60%;
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product{
+    width: 22%;
+    padding: 10px;
+    background-color:#fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.product >*{
+    margin-bottom: 20px;
+}
+.link{
+    display: block;
+}
+.product h3{
+    color: var(--main-color);
+}
+.product img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.product img:hover{
+    transform: scale(1.1);
+}
+.product div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.product .product-icon{
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: black;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.product .product-icon:hover{
+    background-color: #f4f460;
+}
+.product-details{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 30px;
+}
+.product-details-img{
+    width: 40%;
+    background-color: #fff;
+    padding: 10px;
+}
+.product-details img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.product-info{
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+}
+.product-info > *{
+margin-bottom: 20px;
+}
+.product-info h2{
+    color: var(--main-color);
+}
+.product-info h3{
+    font-size: 20px;
+}
+.product-info p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: gray;
+}
+.product-info div{
+    display: flex;
+    gap: 5px;
+}
+.product-info .star-icon{
+    font-size: 20px;
+    color: gold;
+}
+.product-info button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 15px 10px;
+    border: none;
+    font-size: 18px;
+    width: 200px;   
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.product-info button:hover{
+    background-color: yellow;
+}
+
+@media screen and (max-width: 800px){
+    .product{
+        width: 35%;
+        margin: 0 auto;
+    }
+    .title p{
+        color: #ccc;
+        width: 90%;
+        margin: 30px auto;
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    .product-details{
+        flex-direction: column;
+    }
+    .product-details-img{
+        width: 100%;
+    }
+    .product-info{
+        width: 100%;
+    }
+    .product-info button{
+       margin: 0 auto;
+    }
+}

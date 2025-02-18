@@ -1,0 +1,73 @@
+.feature-parent{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.fproduct{
+    width: 22%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.fproduct >*{
+    margin-bottom: 20px;
+}
+.fproduct img{
+    width: 100%;
+    background-size: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.fproduct img:hover{
+    transform: scale(1.1);
+}
+.fproduct h2{
+    color: var(--main-color);
+    font-size: 25px;
+}
+.product-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.product-price h3{
+    font-size: 20px;
+}
+.product-price h4{
+    font-size: 20px;
+    text-decoration: line-through;
+    color: gray;
+}
+.fproduct-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: gold;
+}
+.fproduct-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fproduct-btn{
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.fproduct-btn:hover{
+    background-color: #f4f460;
+}
+
+/* responsive featureproducts */
+
+@media screen and (max-width: 800px){
+    .fproduct{
+        width: 40%;
+    }
+}

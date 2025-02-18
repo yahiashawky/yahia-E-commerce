@@ -1,0 +1,17 @@
+.parent-partners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child-partner{
+    width: 22%;
+    padding: 30px;
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 800px){
+    .child-partner{
+        width: 100%;
+        margin-left: 50px;
+    }
+}

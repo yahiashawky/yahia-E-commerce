@@ -1,0 +1,97 @@
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.contact-left{
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact-left form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-left form input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #ddd;
+}
+.contact-left form textarea{
+    height: 150px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ddd;
+    
+}
+.contact-left form button{
+    padding: 15px 10px;
+    background-color: var(--main-color);
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+.contact-left form button:hover{
+    background-color: rgb(121, 121, 38);
+}
+.contact-right{
+    width: 40%;
+}
+.contact-right-up{
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact-right-up iframe{
+    height: 250px;
+}
+.contact-right-down{
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.contact-right-down > *{
+    margin-bottom: 20px;
+}
+.contact-right-down div{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   font-size: 20px;
+}
+.contact-right-down div span{
+    font-weight: bold;
+    color: gray;
+}
+.contact-right-down div .contact-icons{
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 800px){
+    .contact{
+        flex-direction: column;
+    }
+    .contact-left{
+        width: 90%;
+    }
+    .contact-left form button{
+        margin: 0 auto;
+    }
+    .contact-right{
+        width: 100%;
+    }
+}
